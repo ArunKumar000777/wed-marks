@@ -3,11 +3,11 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
     return (
-        <div className="bg-dark min-h-[352px] px-40 pt-11 grid lg:grid-cols-5 md:grid-cols-3 md:gap-y-5 sm:grid-cols-2 text-light">
+        <div className="bg-dark min-h-[312px] px-40 pt-11 grid lg:grid-cols-5 md:grid-cols-3 md:gap-y-5 sm:grid-cols-2 text-light justify-items-center text-center gap-y-8 pb-10">
             <div className="flex flex-col gap-y-3">
                 <h3 className="text-xl font-medium">Logo</h3>
                 <h5>Social Media</h5>
-                <div className="flex">
+                <div className="flex justify-center">
                     <FacebookIcon className="cursor-pointer" />
                     <InstagramIcon className="cursor-pointer" />
                 </div>
