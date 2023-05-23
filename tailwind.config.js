@@ -3,22 +3,22 @@ export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
+            animation: {
+                wiggle: "wiggle 1s ease-in-out infinite",
+            },
+            keyframes: {
+                wiggle: {
+                    "0%, 100%": { transform: "rotate(-3deg)" },
+                    "50%": { transform: "rotate(3deg)" },
+                },
+            },
             colors: {
-                primary: "#ffffff",
-                secondary: "#ccb37f",
-                accent_primary: "#edf7f8",
-                text_primary: "black",
-                text_secondary: "gray",
-                text_terinery: "white",
-                accent_secondary: "#f4a492",
-                bg_gold: "#eccf8d",
-                accent_ivory: "#ccb37f",
-                secondary1: "#eee6d4",
                 dark: "#9accc9",
                 light: "#edf7f8",
                 text_light: "#fffafa",
                 accent: "#9dccc9",
                 line: "#e1eaeb",
+                dark_gray: "#333333",
                 line_shade: {
                     100: "#f9fbfb",
                     200: "#f3f7f7",

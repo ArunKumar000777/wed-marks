@@ -5,9 +5,9 @@ import productImage3 from "../assets/catering.png";
 import productImage4 from "../assets/flowers.png";
 const Organizers = () => {
     return (
-        <div className="grid min-h-[880px] grid-cols-1 lg:px-40 bg-light lg:grid-cols-2 pb-14 px-20">
+        <div className="grid min-h-[880px] grid-cols-1 lg:px-40 bg-light lg:grid-cols-2 pb-14 px-20 mt-12 lg:mt-0">
             <div className="flex flex-col justify-center h-full">
-                <h1 className="text-6xl font-bold leading-[70px] text-center">Meet Our Creative Event Organizer</h1>
+                <h1 className="lg:text-6xl text-4xl font-bold lg:leading-[70px] text-center">Meet Our Creative Event Organizer</h1>
                 <p className="mt-6 text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore nam natus, dolorum,
                     laudantium quos enim perspiciatis asperiores tenetur voluptatum voluptas possimus in accusantium! Vitae

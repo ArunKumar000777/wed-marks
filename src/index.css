@@ -3,7 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
+
+html {
+    scroll-behavior: smooth;
+}
+* {
     /* outline: 1px solid red; */
 }
 body {
@@ -12,8 +16,36 @@ body {
 }
 h1 {
     font-family: "Syne", sans-serif;
+    color: black;
 }
-p{
+p {
     color: gray;
 }
+h4 {
+    cursor: pointer;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
 
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.animated-slide-in {
+    animation: slideIn 0.4s forwards;
+}
+
+.animated-slide-out {
+    animation: slideOut 0.3s forwards;
+}
