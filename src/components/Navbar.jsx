@@ -38,7 +38,8 @@ const Navbar = () => {
     //     }
     // };
     return (
-        <div className="flex items-center justify-between h-16 px-14 lg:px-40 bg-dark md:bg-light">
+        <>
+        <div className="flex items-center justify-between h-20 px-14 lg:px-40 bg-dark md:bg-light sticky top-0 z-30">
             <div>
                 <h1 className="font-medium text-dark_gray ">WedMark</h1>
             </div>
@@ -71,9 +72,10 @@ const Navbar = () => {
             </div>
 
             {/* FOR MOBILE DEVICES */}
+        </div>
             <nav
                 // ref={menuRef}
-                className={`absolute top-0 right-0 z-10 h-full text-white  w-72 md:hidden backdrop-blur-xl bg-dark/30 backdrop-brightness-110   ${
+                className={`absolute top-0 right-0 z-40 h-full text-white  w-72 md:hidden backdrop-blur-xl bg-dark/30 backdrop-brightness-110   ${
                     isOpen ? "animated-slide-in" : "animated-slide-out"
                 }`}
             >
@@ -99,7 +101,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </nav>
-        </div>
+        </>
     );
 };
 
