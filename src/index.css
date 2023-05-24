@@ -24,6 +24,9 @@ p {
 h4 {
     cursor: pointer;
 }
+.disable-scroll {
+    overflow: hidden;
+}
 @keyframes slideIn {
     from {
         transform: translateX(100%);

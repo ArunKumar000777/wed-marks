@@ -1,108 +1,85 @@
-import React, { useEffect, useRef, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
-const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+import { useEffect, useRef, useState } from "react";
+const Nav = () => {
+    let [open, setopen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
     useEffect(() => {
+        const handleScroll = () => {
+            // Calculate the scroll position
+            const scrollPosition = window.scrollY;
+
+            // Check if the scroll position is greater than 10 (lg:top-10)
+            setIsScrolled(scrollPosition > 10);
+        };
+
+        // Add the scroll event listener
         window.addEventListener("scroll", handleScroll);
 
+        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, [isOpen]);
+    }, []);
+    const ref = useRef(null);
 
-    const handleScroll = () => {
-        if (isOpen) {
-            // Prevent scrolling when the menu is open
-            window.scrollTo(0, 0);
+    const location = useLocation();
+
+    useEffect(() => {
+        // function to run on route change
+        setopen(false);
+    }, [location]);
+    useEffect(() => {
+        document.addEventListener("mousedown", handleClick);
+        return () => {
+            document.removeEventListener("mousedown", handleClick);
+        };
+    }, []);
+
+    function handleClick(e) {
+        if (ref.current && !ref.current.contains(e.target)) {
+            setopen(false);
         }
-    };
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-    // const menuRef = useRef(null);
-
-    // useEffect(() => {
-    //     window.addEventListener("click", handleClickOutside);
-
-    //     return () => {
-    //         window.removeEventListener("click", handleClickOutside);
-    //     };
-    // }, [menuRef]);
-
-    // const handleClickOutside = (event) => {
-    //     if (menuRef.current && !menuRef.current.contains(event.target)) {
-    //         // Click outside of the menu, close the menu
-    //         setIsOpen(false);
-    //     }
-    // };
+    }
+    const menus = [
+        { name: "HOME", path: "/" },
+        { name: "ABOUT", path: "/about" },
+        { name: "SERVICES", path: "/services" },
+        { name: "GALLERY", path: "gallery" },
+        { name: "CONTACT", path: "contact" },
+    ];
     return (
-        <>
-        <div className="flex items-center justify-between h-20 px-14 lg:px-40 bg-dark md:bg-light sticky top-0 z-30">
-            <div>
-                <h1 className="font-medium text-dark_gray ">WedMark</h1>
+        <nav
+            ref={ref}
+            className={`fixed top-0 flex items-center justify-between w-full h-14 pt-5 lg:h-20 lg:${
+                isScrolled ? "top-0" : "top-10"
+            } bg-light  z-50`}
+        >
+            <div className="fixed z-20 cursor-pointer md:hidden right-5 top-6" onClick={() => setopen(!open)}>
+                {open ? <CloseIcon /> : <MenuIcon style={{ fontSize: "30px" }} />}
             </div>
-            <div className={` md:hidden text-light ${isOpen ? "hidden" : "block"}`} onClick={toggleMenu}>
-                <MenuIcon style={{ fontSize: "35px" }} />
-            </div>
-            <nav className="hidden md:block ">
-                <ul className="flex flex-col font-medium text-dark_gray lg:gap-x-14 gap-x-4 md:flex-row">
-                    <Link to={"/"}>
-                        <li className="cursor-pointer hover:opacity-80">Home</li>
-                    </Link>
-                    <Link to={"/about"}>
-                        <li className="cursor-pointer hover:opacity-80">About</li>
-                    </Link>
-                    <Link to={"/services"}>
-                        <li className="cursor-pointer hover:opacity-80">Services</li>
-                    </Link>
-                    <Link to={"/gallery"}>
-                        <li className="cursor-pointer hover:opacity-80">Gallery</li>
-                    </Link>
-                </ul>
-            </nav>
-            <div className="hidden md:block">
-                <Link to={"/contact"}>
-                    {/* px-10 py-3 mt-8 text-base border-2 rounded-full shadow-md text-dark border-dark hover:text-light hover:bg-accent hover:border-none */}
-                    <button className="px-5 py-2 font-medium transition duration-300 ease-in-out rounded-full shadow-md  lg:py-3 lg:px-10 bg-accent text-light hover:bg-light hover:text-dark hover:border-dark border-2">
-                        Contact
-                    </button>
-                </Link>
-            </div>
-
-            {/* FOR MOBILE DEVICES */}
-        </div>
-            <nav
-                // ref={menuRef}
-                className={`absolute top-0 right-0 z-40 h-full text-white  w-72 md:hidden backdrop-blur-xl bg-dark/30 backdrop-brightness-110   ${
-                    isOpen ? "animated-slide-in" : "animated-slide-out"
+            <img src="./src/assets/logo.svg" alt="logo" className="w-10 ml-7" />
+            <ul
+                className={`bg-[#ffffff14] backdrop-blur-md  md:pl-10 pr-28 md:static fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${
+                    !open ? "right-[-100%] " : "right-0"
                 }`}
             >
-                <div className="absolute right-3 top-3 cursor-pointer " onClick={toggleMenu}>
-                    <CloseIcon style={{ color: "black" }} />
-                </div>
-                {/* Navbar content */}
-                <div className="md:hidden mt-14">
-                    {/* Navbar links go here */}
-                    <ul className="flex flex-col items-center gap-y-5 font-medium text-dark_gray lg:gap-x-14 gap-x-4 md:flex-row w-full">
-                        <Link to={"/"}>
-                            <li className="cursor-pointer hover:opacity-80 w-72 text-center border-b border-gray-200 pb-2">Home</li>
+                {menus.map((menu, index) => (
+                    <li
+                        key={index}
+                        className="my-6 ml-5 duration-300 border-b-2 border-transparent md:inline-block md:ml-10 md:my-0 hover:border-dark"
+                    >
+                        <Link to={`${menu?.path}`}>
+                            <a className="inline-block py-3 text-sm font-normal text-black cursor-pointer font-Barlow md:py-5">
+                                {menu.name}
+                            </a>
                         </Link>
-                        <Link to={"/about"}>
-                            <li className="cursor-pointer hover:opacity-80 w-72 text-center border-b border-gray-200 pb-2">About</li>
-                        </Link>
-                        <Link to={"/services"}>
-                            <li className="cursor-pointer hover:opacity-80 w-72 text-center border-b border-gray-200 pb-2">Services</li>
-                        </Link>
-                        <Link to={"/gallery"}>
-                            <li className="cursor-pointer hover:opacity-80 w-72 text-center border-b border-gray-200 pb-2">Gallery</li>
-                        </Link>
-                    </ul>
-                </div>
-            </nav>
-        </>
+                    </li>
+                ))}
+            </ul>
+        </nav>
     );
 };
-
-export default Navbar;
+export default Nav;

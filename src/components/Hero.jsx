@@ -5,8 +5,8 @@ import image2 from "../assets/weddingStageImage2.jpeg";
 import image3 from "../assets/diamond.png";
 const Hero = () => {
     return (
-        <section>
-            <img src={image3} alt="" className="absolute w-32 right-1/4 opacity-5 top-52" />
+        <section className="mt-14 lg:mt-0">
+            <img src={image3} alt="" className="absolute w-32 right-1/4 opacity-5 top-52 " />
             <div className="flex items-center justify-between lg:min-h-[800px] py-[20px] px-10 lg:px-40 md:px-20  overflow-hidden flex-col-reverse lg:flex-row ">
                 <div className="mt-8 lg:aspect-5/6 lg:mt-0">
                     <img
