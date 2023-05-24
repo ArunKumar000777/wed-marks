@@ -3,6 +3,9 @@ export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
+            fontFamily: {
+                Playfair: "Playfair, serif",
+            },
             animation: {
                 wiggle: "wiggle 1s ease-in-out infinite",
             },

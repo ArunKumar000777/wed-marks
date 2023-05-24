@@ -8,11 +8,13 @@ const ProductCategories = () => {
     return (
         <div className="grid min-h-[880px] grid-cols-1 lg:px-40 bg-light lg:grid-cols-2 pb-14 px-20 mt-12 lg:mt-0">
             <div className="flex flex-col justify-center h-full">
-                <h1 className="lg:text-6xl text-4xl font-bold lg:leading-[70px] text-center">Includes Various Product Categories</h1>
+                <h1 className="lg:text-6xl text-4xl font-bold lg:leading-[70px] text-center">
+                    Includes Various Product Categories
+                </h1>
                 <p className="mt-6 text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore nam natus, dolorum,
-                    laudantium quos enim perspiciatis asperiores tenetur voluptatum voluptas possimus in accusantium! Vitae
-                    nam provident ab laboriosam. Velit!
+                    At WedMarks, we offer a wide range of product categories to cater to your every need. From fashion and
+                    home decor to electronics and more, our curated selection ensures you'll find exactly what you're
+                    looking for.
                 </p>
             </div>
             {/* image container */}

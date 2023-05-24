@@ -7,20 +7,15 @@ import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Services from "./pages/Services";
+import AnimatedRoutes from "./components/AnimatedRoutes";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (
         <>
             <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Layout />}>
-                        <Route index element={<Home />} />
-                        <Route path="/About" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/gallery" element={<Gallery />} />
-                        <Route path="/services" element={<Services />} />
-                    </Route>
-                </Routes>
+                <ScrollToTop />
+                <AnimatedRoutes />
             </BrowserRouter>
         </>
     );

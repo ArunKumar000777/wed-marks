@@ -11,15 +11,16 @@ html {
     /* outline: 1px solid red; */
 }
 body {
-    /* background-color: orange; */
     font-family: "DM Sans", sans-serif;
 }
 h1 {
-    font-family: "Syne", sans-serif;
+    font-family: "Playfair", serif;
     color: black;
 }
 p {
     color: gray;
+    font-family: "Playfair", serif;
+    font-size: 1.2rem;
 }
 h4 {
     cursor: pointer;

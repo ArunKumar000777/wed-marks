@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "framer-motion";
 import heroImage from "../assets/weddingImage3.jpeg";
 import image1 from "../assets/wddingStageImage.jpeg";
 import image2 from "../assets/weddingStageImage2.jpeg";
@@ -15,34 +15,44 @@ const Hero = () => {
                         className="h-full w-full object-cover rounded-tl-[60px] rounded-br-[60px] hover:scale-105 border-white border-8 transition ease-in-out duration-300 max-h-[550px]"
                     />
                 </div>
-                <div className="max-w-2xl mt-5 lg:pl-14 lg:mt-0">
-                    <h1 className="text-4xl font-bold text-center lg:text-6xl lg:text-start">Perfect Weddings</h1>
+                <motion.div
+                    className="max-w-2xl mt-5 lg:pl-14 lg:-mt-20"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                >
+                    <h1 className="text-4xl font-bold text-center lg:text-6xl lg:text-start ">Perfect Weddings</h1>
                     <h1 className="mt-3 text-4xl font-bold text-center lg:text-6xl lg:text-start">Made Easy!</h1>
-                    <p className="px-8 mt-6 text-center md:text-xl">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque doloremque a excepturi
-                        repudiandae autem maiores accusamus optio quidem, dicta adipisci minima similique tempora voluptatem
-                        nesciunt corrupti maxime atque quis.
+                    <p className="px-8 mt-6 text-center md:text-xl ">
+                        At Wedmarks, we make your dream wedding a reality. With meticulous planning and flawless execution,
+                        we effortlessly orchestrate unforgettable celebrations that reflect your unique love story. Trust us
+                        to create a seamless and stress-free wedding experience, making your perfect day effortlessly
+                        memorable.
                     </p>
-                </div>
+                </motion.div>
             </div>
 
             {/* WHAT WE DO */}
             <div className="flex flex-col justify-center w-full px-20 mt-12 text-center lg:mt-32 lg:px-40 lg:flex-row lg:text-start ">
-                <div className="lg:pr-24">
+                <motion.div
+                    className="lg:pr-24"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                >
                     <h3 className="text-xl font-medium lg:text-2xl">About WedMark</h3>
                     <h1 className="lg:text-6xl text-4xl font-bold lg:leading-[70px] mt-4">What We do,We do With Passion</h1>
                     <p className="mt-6 text-xl lg:pr-4 ">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas eaque doloremque a excepturi
-                        repudiandae autem maiores accusamus optio quidem, dicta adipisci minima similique tempora voluptatem
-                        nesciunt corrupti maxime atque quis.
+                        At Wedmarks, our passion drives us to create extraordinary wedding experiences. From meticulous
+                        planning to flawless execution, we pour our hearts into crafting unforgettable moments that will be
+                        cherished forever.
                     </p>
                     <button className="px-10 py-3 mt-8 text-base border-2 rounded-full shadow-md text-dark border-dark hover:text-light hover:bg-accent hover:border-none">
                         Learn More
                     </button>
-                </div>
+                </motion.div>
                 {/* image section */}
 
-                
                 <div className="flex justify-center">
                     <div className="mt-8 lg:mt-0">
                         <div className="h-64 lg:w-96">
@@ -68,7 +78,6 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                
             </div>
         </section>
     );
