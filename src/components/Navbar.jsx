@@ -2,6 +2,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import { useEffect, useRef, useState } from "react";
+import logo from "../assets/logo.svg";
 const Nav = () => {
     let [open, setopen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -55,14 +56,14 @@ const Nav = () => {
             ref={ref}
             className={`fixed top-0 flex items-center justify-between w-full h-14 pt-5 lg:h-20 lg:${
                 isScrolled ? "top-0" : "top-10"
-            } bg-light  z-50`}
+            } bg-[#ffffff14] backdrop-blur-lg z-50`}
         >
             <div className="fixed z-20 cursor-pointer md:hidden right-5 top-6" onClick={() => setopen(!open)}>
                 {open ? <CloseIcon /> : <MenuIcon style={{ fontSize: "30px" }} />}
             </div>
-            <img src="./src/assets/logo.svg" alt="logo" className="w-10 ml-7" />
+            <img src={logo} alt="logo" className="w-10 ml-7" />
             <ul
-                className={`bg-[#ffffff14] backdrop-blur-md  md:pl-10 pr-28 md:static fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${
+                className={`  md:pl-10 pr-28 md:static fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${
                     !open ? "right-[-100%] " : "right-0"
                 }`}
             >

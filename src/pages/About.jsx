@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const About = () => {
     return (
         <motion.div
-            className=" bg-light mt-10 pt-14 "
+            className="mt-10 bg-light pt-14"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -18,9 +18,9 @@ const About = () => {
                 <h2 className="text-center text-[50px] font-light">to life!</h2>
             </div>
             {/* section2 */}
-            <div className="flex flex-col md:flex-row justify-center items-center lg:px-40 px-20 md:gap-x-5">
+            <div className="flex flex-col items-center justify-center px-20 md:flex-row lg:px-40 md:gap-x-5">
                 <div className="md:w-1/2 lg:h-[627px] md:h-[500px] sm:h-[400px] flex flex-col justify-center lg:px-5">
-                    <h3 className="text-3xl font-bold mb-4">About Us</h3>
+                    <h3 className="mb-4 text-3xl font-bold">About Us</h3>
                     <p className="mb-4 lg:text-2xl">
                         At Wedmarks, we specialize in wedding event management, dedicated to creating unforgettable moments
                         for your dream wedding. With meticulous planning and flawless execution, our experienced team
@@ -45,7 +45,7 @@ const About = () => {
                 </div>
             </div> */}
             {/* section3 */}
-            <div className="h-36 mt-10 flex justify-between flex-wrap bg-white items-center px-10">
+            <div className="flex flex-wrap items-center justify-between px-10 mt-10 bg-white h-36">
                 <div className="flex flex-col">
                     <span>100</span>
                     <span>Wedding Vendors</span>
@@ -64,9 +64,9 @@ const About = () => {
                 </div>
             </div>
             {/* section4 */}
-            <div className="flex flex-col md:flex-row-reverse justify-center items-center lg:px-40 px-20 md:gap-x-5">
+            <div className="flex flex-col items-center justify-center px-20 md:flex-row-reverse lg:px-40 md:gap-x-5">
                 <div className="md:w-1/2 lg:h-[627px] md:h-[500px] sm:h-[400px] flex flex-col justify-center lg:px-5">
-                    <h3 className="text-3xl font-bold mb-4">Whow We Are</h3>
+                    <h3 className="mb-4 text-3xl font-bold">Whow We Are</h3>
                     <p className="mb-4 lg:text-2xl">
                         Wedmarks is a passionate team of experts in wedding event management. With meticulous planning and
                         flawless execution, we curate exceptional weddings that reflect your unique style. Trust us to
@@ -79,9 +79,9 @@ const About = () => {
                 </div>
             </div>
             {/* section4 */}
-            <div className="flex flex-col md:flex-row justify-center items-center lg:px-40 px-20 md:gap-x-5">
+            <div className="flex flex-col items-center justify-center px-20 md:flex-row lg:px-40 md:gap-x-5">
                 <div className="md:w-1/2 lg:h-[627px] md:h-[500px] sm:h-[400px] flex flex-col justify-center lg:px-5">
-                    <h3 className="text-3xl font-bold mb-4">What We Offer</h3>
+                    <h3 className="mb-4 text-3xl font-bold">What We Offer</h3>
                     <p className="mb-4 lg:text-2xl">
                         At Wedmarks, we provide a full range of wedding services, from concept design and planning to venue
                         selection, vendor coordination, and flawless execution. With personalized solutions tailored to your

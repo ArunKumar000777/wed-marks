@@ -3,11 +3,11 @@ const ContactForm = () => {
         <div className={` grid lg:grid-cols-2 grid-cols-1 lg:px-52 lg:h-[880px] sm:px-16 px-12 h-[1013px] bg-[#edf8d4]`}>
             {/* child1 */}
             <div className="flex flex-col justify-center">
-                <h1 className='lg:text-5xl text-[40px] font-Playfair '>Get in touch</h1>
-                <p className={` lg:text-2xl  text-xl }`}>
+                <h1 className="lg:text-5xl text-[40px] font-Playfair">Get in touch</h1>
+                <p className='mt-6 text-xl lg:text-2xl'>
                     Send us your enquiry and someone from WedMark will get in touch with you shortly.
                 </p>
-                <div className={` w-14 h-[2px] mt-12`}></div>
+                <div className='bg-dark w-14 h-[2px] mt-12'></div>
             </div>
             {/* child2 */}
             <div className="h-full lg:pl-5">
