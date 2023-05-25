@@ -9,7 +9,7 @@ import ContactForm from "../components/ContactForm";
 const Contact = () => {
   // lg:min-h-[950px]
     return (
-        <div className="bg-light pt-14">
+        <div className="pt-20 bg-light">
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 {/* child1 */}
                 <div>

@@ -8,7 +8,7 @@ const Hero = () => {
         <section className="mt-14 lg:mt-0">
             <img src={image3} alt="" className="absolute w-32 right-1/4 opacity-5 top-52 " />
             <div className="flex items-center justify-between lg:min-h-[800px] py-[20px] px-10 lg:px-40 md:px-20  overflow-hidden flex-col-reverse lg:flex-row ">
-                <div className="mt-8 lg:aspect-5/6 lg:mt-0">
+                <div className="mt-8 lg:aspect-5/6 lg:mt-10">
                     <img
                         src={heroImage}
                         alt="heroImage"
@@ -47,7 +47,7 @@ const Hero = () => {
                         planning to flawless execution, we pour our hearts into crafting unforgettable moments that will be
                         cherished forever.
                     </p>
-                    <button className="px-10 py-3 mt-8 text-base border-2 rounded-full shadow-md text-dark border-dark hover:text-light hover:bg-accent hover:border-none">
+                    <button className="px-10 py-3 mt-8 text-base text-white border-2 rounded-full shadow-md border-dark hover:text-black hover:bg-white hover:border-none">
                         Learn More
                     </button>
                 </motion.div>

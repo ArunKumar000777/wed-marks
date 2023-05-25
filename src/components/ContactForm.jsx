@@ -7,7 +7,7 @@ const ContactForm = () => {
                 <p className='mt-6 text-xl lg:text-2xl'>
                     Send us your enquiry and someone from WedMark will get in touch with you shortly.
                 </p>
-                <div className='bg-dark w-14 h-[2px] mt-12'></div>
+                <div className='bg-white w-14 h-[2px] mt-12'></div>
             </div>
             {/* child2 */}
             <div className="h-full lg:pl-5">
