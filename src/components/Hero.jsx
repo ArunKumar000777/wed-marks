@@ -22,7 +22,7 @@ const Hero = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <h1 className="text-4xl font-bold text-center lg:text-6xl lg:text-start ">Perfect Weddings</h1>
-                    <h1 className="mt-3 text-4xl font-bold text-center lg:text-6xl lg:text-start">Made Easy!</h1>
+                    <h1 className="text-4xl font-bold text-center lg:mt-3 lg:text-6xl lg:text-start">Made Easy!</h1>
                     <p className="mt-6 md:text-xl">
                         At Wedmarks, we make your dream wedding a reality. With meticulous planning and flawless execution,
                         we effortlessly orchestrate unforgettable celebrations that reflect your unique love story. Trust us
