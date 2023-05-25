@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    color: white;
 }
 * {
     /* outline: 1px solid red; */
@@ -15,15 +16,20 @@ body {
 }
 h1 {
     font-family: "Playfair", serif;
-    color: black;
+    /* color: black; */
+    color: white;
+
 }
 p {
-    color: gray;
+    /* color: rgb(208, 204, 204); */
+    /* color: white; */
+    color: #939393;
     font-family: "Playfair", serif;
     font-size: 1.2rem;
 }
 h4 {
     cursor: pointer;
+    color:#939393
 }
 .disable-scroll {
     overflow: hidden;

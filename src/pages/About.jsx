@@ -4,12 +4,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
     return (
-        <motion.div
-            className=" bg-light pt-14"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-        >
+        <motion.div className=" bg-light pt-14" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             {/* section1 */}
             <div className="container  mx-auto h-auto md:h-[440px] lg:h-[540px] flex flex-col justify-center  md:mt-20 lg:mt-0 mt-10">
                 <h1 className="text-center xl:text-[60px] lg:text-[50px] md:text-4xl text-3xl font-medium">
@@ -47,22 +42,22 @@ const About = () => {
                 </div>
             </div> */}
             {/* section3 */}
-            <div className="flex flex-wrap items-center justify-between px-10 mt-10 bg-white h-36">
+            <div className="flex flex-wrap items-center justify-between px-10 mt-10 border border-dark_gray bg-dark h-36 hover:border-white">
                 <div className="flex flex-col">
                     <span>100</span>
-                    <span>Wedding Vendors</span>
+                    <span className="text-dark_gray">Wedding Vendors</span>
                 </div>
                 <div className="flex flex-col">
                     <span>200</span>
-                    <span>Annual Weddings</span>
+                    <span className="text-dark_gray">Annual Weddings</span>
                 </div>
                 <div className="flex flex-col">
                     <span>1000</span>
-                    <span>Wedding Venues</span>
+                    <span className="text-dark_gray">Wedding Venues</span>
                 </div>
                 <div className="flex flex-col">
                     <span>1000</span>
-                    <span>Monthly Followers</span>
+                    <span className="text-dark_gray">Monthly Followers</span>
                 </div>
             </div>
             {/* section4 */}

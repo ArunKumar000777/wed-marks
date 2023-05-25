@@ -70,10 +70,10 @@ const Nav = () => {
                 {menus.map((menu, index) => (
                     <li
                         key={index}
-                        className="my-6 ml-5 duration-300 border-b-2 border-transparent md:inline-block md:ml-10 md:my-0 hover:border-dark"
+                        className="my-6 ml-5 duration-300 border-b-2 border-transparent md:inline-block md:ml-10 md:my-0 hover:border-line_shade-800"
                     >
                         <Link to={`${menu?.path}`}>
-                            <a className="inline-block py-3 text-sm font-normal text-black cursor-pointer font-Barlow md:py-5">
+                            <a className="inline-block py-3 text-sm font-normal cursor-pointer font-Barlow md:py-5">
                                 {menu.name}
                             </a>
                         </Link>

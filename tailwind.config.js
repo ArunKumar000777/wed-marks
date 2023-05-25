@@ -16,12 +16,12 @@ export default {
                 },
             },
             colors: {
-                dark: "#9accc9",
-                light: "#edf7f8",
+                dark: "#000000",
+                light: "#111111",
                 text_light: "#fffafa",
                 accent: "#9dccc9",
                 line: "#e1eaeb",
-                dark_gray: "#333333",
+                dark_gray: "#939393",
                 line_shade: {
                     100: "#f9fbfb",
                     200: "#f3f7f7",
@@ -45,6 +45,8 @@ export default {
     plugins: [],
 };
 
+// dark: "#9accc9",
+//                 light: "#edf7f8",
 // gold #eab85f,#ddad60,#eccf8d
 // ivory #dacbab,#d9b884,#d4d6c9
 // blue #9accc9

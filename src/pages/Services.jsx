@@ -4,7 +4,7 @@ import React from "react";
 const Services = () => {
     return (
         <motion.div
-            className="h-screen mt-10 bg-light pt-14"
+            className="h-screen bg-light pt-14"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

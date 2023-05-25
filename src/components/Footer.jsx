@@ -12,10 +12,10 @@ const Footer = () => {
             <div className=" min-h-[312px]  px-20 pt-11 grid lg:grid-cols-5 md:grid-cols-3 md:gap-y-5 sm:grid-cols-2 text-darg_gray  text-center gap-y-8 pb-10">
                 <div className="flex flex-col gap-y-3">
                     <h3 className="text-xl font-medium">Logo</h3>
-                    <h5 className="mt-6">Social Media</h5>
-                    <div className="flex justify-center">
-                        <FacebookIcon className="cursor-pointer" />
-                        <InstagramIcon className="cursor-pointer" />
+                    <h5 className="mt-6 text-dark_gray">Social Media</h5>
+                    <div className="flex justify-center lg:mt-20">
+                        <FacebookIcon className="text-white cursor-pointer" />
+                        <InstagramIcon className="text-white cursor-pointer" />
                     </div>
                 </div>
                 <div>
@@ -45,7 +45,7 @@ const Footer = () => {
                         <h4 className="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
                     </div>
                     <div className="mt-4 lg:self-end lg:mt-0">
-                        <span className="mb-4">Top</span>
+                        <span className="mb-4 mr-3">Top</span>
                         <ArrowUpwardIcon onClick={handleOnClick} style={{ cursor: "pointer" }} />
                     </div>
                 </div>

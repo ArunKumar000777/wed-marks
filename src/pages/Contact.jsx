@@ -9,8 +9,8 @@ import ContactForm from "../components/ContactForm";
 const Contact = () => {
   // lg:min-h-[950px]
     return (
-        <div className="bg-light mt-10 pt-14">
-            <div className="grid lg:grid-cols-2 grid-cols-1">
+        <div className="bg-light pt-14">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
                 {/* child1 */}
                 <div>
                     {/* <div className="h-[86px] flex items-center lg:pl-28 pl-16">
@@ -75,6 +75,7 @@ const Contact = () => {
                     ></iframe>
                 </div>
             </div>
+            <hr className="bg-dark_gray"/>
             <ContactForm/>
         </div>
     );

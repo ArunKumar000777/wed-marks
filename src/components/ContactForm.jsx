@@ -1,6 +1,6 @@
 const ContactForm = () => {
     return (
-        <div className={` grid lg:grid-cols-2 grid-cols-1 lg:px-52 lg:h-[880px] sm:px-16 px-12 h-[1013px] bg-[#edf8d4]`}>
+        <div className={` grid lg:grid-cols-2 grid-cols-1 lg:px-52 lg:h-[880px] sm:px-16 px-12 h-[1013px] bg-light`}>
             {/* child1 */}
             <div className="flex flex-col justify-center">
                 <h1 className="lg:text-5xl text-[40px] font-Playfair">Get in touch</h1>
@@ -44,7 +44,7 @@ const ContactForm = () => {
                                 : "bg-gradient-to-br from-primary to-gradient_secondary text-text_secondary"
                         }`}
                     > */}
-                    <button>Send</button>
+                    <button className="self-start px-8 py-2 text-xl text-black bg-white rounded-l-full rounded-r-full shadow-input_shadow">Send</button>
                 </form>
             </div>
         </div>
