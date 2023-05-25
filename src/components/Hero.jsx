@@ -23,7 +23,7 @@ const Hero = () => {
                 >
                     <h1 className="text-4xl font-bold text-center lg:text-6xl lg:text-start ">Perfect Weddings</h1>
                     <h1 className="mt-3 text-4xl font-bold text-center lg:text-6xl lg:text-start">Made Easy!</h1>
-                    <p className="px-8 mt-6 text-center md:text-xl ">
+                    <p className="mt-6 md:text-xl">
                         At Wedmarks, we make your dream wedding a reality. With meticulous planning and flawless execution,
                         we effortlessly orchestrate unforgettable celebrations that reflect your unique love story. Trust us
                         to create a seamless and stress-free wedding experience, making your perfect day effortlessly
@@ -33,7 +33,7 @@ const Hero = () => {
             </div>
 
             {/* WHAT WE DO */}
-            <div className="flex flex-col justify-center w-full px-20 mt-12 text-center lg:mt-32 lg:px-40 lg:flex-row lg:text-start ">
+            <div className="flex flex-col justify-center w-full px-10 mt-12 lg:mt-32 lg:px-40 lg:flex-row lg:text-start ">
                 <motion.div
                     className="lg:pr-24"
                     initial={{ opacity: 0, y: 20 }}

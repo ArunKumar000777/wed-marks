@@ -4,9 +4,9 @@ import productImage3 from "../assets/catering.png";
 import productImage4 from "../assets/flowers.png";
 const Scenery = () => {
     return (
-        <div className="lg:min-h-[880px] bg-light lg:px-40 px-20 mt-10">
+        <div className="lg:min-h-[880px] bg-light lg:px-40 px-10 mt-10">
             {/* <div> */}
-            <h1 className="lg:text-6xl text-4xl font-bold text-center max-w-[800px] container mx-auto">
+            <h1 className="lg:text-6xl text-4xl font-bold max-w-[800px] container mx-auto">
                 Unrivaled scenery, memories that last forever
             </h1>
             {/* </div> */}
