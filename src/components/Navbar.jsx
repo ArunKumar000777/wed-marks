@@ -56,14 +56,14 @@ const Nav = () => {
             ref={ref}
             className={`fixed top-0 flex items-center justify-between w-full h-14 pt-5 lg:h-20 lg:${
                 isScrolled ? "top-0" : "top-10"
-            } bg-[#ffffff14] backdrop-blur-lg z-50`}
+            } lg:bg-[#ffffff14] lg:backdrop-blur-lg z-50 bg-light`}
         >
             <div className="fixed z-20 cursor-pointer md:hidden right-5 top-6" onClick={() => setopen(!open)}>
                 {open ? <CloseIcon /> : <MenuIcon style={{ fontSize: "30px" }} />}
             </div>
             <img src={logo} alt="logo" className="w-10 ml-7" />
             <ul
-                className={`  md:pl-10 pr-28 md:static fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${
+                className={` backdrop-blur-md lg:backdrop-blur-0  md:pl-10 pr-28 md:static fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${
                     !open ? "right-[-100%] " : "right-0"
                 }`}
             >
