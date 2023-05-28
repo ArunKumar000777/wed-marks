@@ -10,8 +10,8 @@ const ContactForm = () => {
                 <div className='bg-white w-14 h-[2px] mt-12'></div>
             </div>
             {/* child2 */}
-            <div className="h-full lg:pl-5">
-                <form className="flex flex-col h-full justify-evenly">
+            <div className="h-full lg:pl-5 mt-36">
+                <form className="flex flex-col h-full gap-y-4">
                     <input
                         type="text"
                         placeholder="Your name"
