@@ -36,8 +36,8 @@ const Hero = () => {
             <div className="flex flex-col justify-center w-full px-10 mt-12 lg:mt-32 lg:px-40 lg:flex-row lg:text-start ">
                 <motion.div
                     className="lg:pr-24"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, scale: 0, x: 500 }}
+                    animate={{ opacity: 1, scale: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
                 >
                     <h3 className="text-xl font-medium lg:text-2xl">About WedMark</h3>
