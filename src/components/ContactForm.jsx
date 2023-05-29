@@ -38,7 +38,10 @@ const ContactForm = () => {
                         className={` bg-gray-200 px-8 py-4 placeholder:text-text_black rounded-r-2xl rounded-l-2xl shadow-input_shadow placeholder:text-xl`}
                     />
 
-                    <button className="self-start px-8 py-2 text-xl bg-transparent border-2 rounded-l-full rounded-r-full text-secondary shadow-input_shadow hover:bg-secondary border-secondary hover:text-black">
+                    <button
+                        className="self-start px-8 py-2 text-xl bg-transparent border-2 rounded-l-full rounded-r-full text-secondary shadow-input_shadow hover:bg-secondary border-secondary hover:text-black"
+                        disabled
+                    >
                         Send
                     </button>
                 </form>
