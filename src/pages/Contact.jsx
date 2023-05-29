@@ -45,7 +45,9 @@ const Contact = () => {
                                     <h5 className="text-text_link_gray">For trade enquiries</h5>
                                 </div>
                                 <div>
-                                    <h4>Infoline: +(91) 9747834369</h4>
+                                    <a href="tel:7907456800" target="_blank">
+                                        <h4>Infoline: +(91) 9747834369</h4>
+                                    </a>
                                     <h4>Dubai: +971582975256</h4>
                                 </div>
                             </div>
@@ -56,8 +58,12 @@ const Contact = () => {
                                     <h5 className="text-text_link_gray">Email</h5>
                                 </div>
                                 <div>
-                                    <h4>philip@wedmarkevents.com</h4>
-                                    <h4>dominic@wedmarkevents.com</h4>
+                                    <a href="mailto:philip@wedmarkevents.com">
+                                        <h4>philip@wedmarkevents.com</h4>
+                                    </a>
+                                    <a href="mailto:philip@wedmarkevents.com">
+                                        <h4>dominic@wedmarkevents.com</h4>
+                                    </a>
                                 </div>
                             </div>
                         </div>
