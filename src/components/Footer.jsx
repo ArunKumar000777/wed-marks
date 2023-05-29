@@ -2,6 +2,7 @@ import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import logo from "../assets/WedmarkLogo.png";
 
 const Footer = () => {
     const handleOnClick = () => {
@@ -10,9 +11,9 @@ const Footer = () => {
     return (
         <footer className="bg-dark">
             <div className=" min-h-[312px]  px-20 pt-11 grid lg:grid-cols-5 md:grid-cols-3 md:gap-y-5 sm:grid-cols-2 text-darg_gray  text-center gap-y-8 pb-10">
-                <div className="flex flex-col gap-y-3">
-                    <h3 className="text-xl font-medium">Logo</h3>
-                    <h5 className="mt-6 text-dark_gray">Social Media</h5>
+                <div className="flex flex-col items-center gap-y-3">
+                    <img src={logo} alt="logo" className="w-20 " />
+                    <h5 className="mt-6 text-center text-dark_gray">Social Media</h5>
                     <div className="flex justify-center lg:mt-20">
                         <FacebookIcon className="text-white cursor-pointer" />
                         <InstagramIcon className="text-white cursor-pointer" />
@@ -50,7 +51,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="flex justify-center pb-3">&copy; 2023 Wedmarks - Wedding Event Management. All rights reserved.</p>
+            <p className="flex justify-center pb-3">
+                &copy; 2023 Wedmarks - Wedding Event Management. All rights reserved.
+            </p>
         </footer>
     );
 };
