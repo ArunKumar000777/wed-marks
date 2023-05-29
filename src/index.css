@@ -19,18 +19,37 @@ h1 {
     font-family: "Playfair", serif;
     /* color: black; */
     color: white;
-
 }
 p {
     /* color: rgb(208, 204, 204); */
     /* color: white; */
-    color: #939393;
-    font-family: "Playfair", serif;
+    /* color: #939393; */
+    /* font-family: "Playfair", serif; */
     font-size: 1.2rem;
+    color: #ffffffae;
+}
+h3 {
+    color: #ffffffae;
 }
 h4 {
     cursor: pointer;
-    color:#939393
+    color: #ffffffae;
+    /* color: #939393; */
+}
+h1 {
+    color: #d19324;
+}
+.icons-background {
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(209, 147, 36, 1) 0%,
+        rgba(70, 45, 1, 1) 100%,
+        rgba(93, 88, 80, 1) 100%
+    );
+    font-size: 24px;
+    border-radius: 4px;
+    color: black;
 }
 .disable-scroll {
     overflow: hidden;

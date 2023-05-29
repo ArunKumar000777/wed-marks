@@ -17,8 +17,8 @@ const About = () => {
             {/* section2 */}
             <div className="flex flex-col items-center justify-center px-8 md:flex-row lg:px-40 md:gap-x-5">
                 <div className="md:w-1/2 lg:h-[627px] md:h-[500px] sm:h-[400px] flex flex-col justify-center lg:px-5">
-                    <h3 className="mt-6 mb-4 text-xl font-bold lg:text-3xl lg:mt-0">About Us</h3>
-                    <p className="mb-4 lg:text-2xl">
+                    <h3 className="mt-6 mb-4 text-xl font-bold lg:text-3xl lg:mt-0 text-secondary">About Us</h3>
+                <p className="mb-4 md:text-xl">
                         At Wedmarks, we specialize in wedding event management, dedicated to creating unforgettable moments
                         for your dream wedding. With meticulous planning and flawless execution, our experienced team
                         ensures that your special day is a true reflection of your unique love story.
@@ -42,29 +42,29 @@ const About = () => {
                 </div>
             </div> */}
             {/* section3 */}
-            <div className="flex flex-wrap items-center justify-between px-10 mt-10 border border-dark_gray bg-dark h-36 hover:border-white">
+            <div className="flex flex-wrap items-center justify-between px-10 mt-10 border border-secondaryDark bg-dark h-36 hover:border-secondary">
                 <div className="flex flex-col">
-                    <span>100</span>
+                    <span className="text-secondary">100</span>
                     <span className="text-dark_gray">Wedding Vendors</span>
                 </div>
                 <div className="flex flex-col">
-                    <span>200</span>
+                    <span className="text-secondary">200</span>
                     <span className="text-dark_gray">Annual Weddings</span>
                 </div>
                 <div className="flex flex-col">
-                    <span>1000</span>
+                    <span className="text-secondary">1000</span>
                     <span className="text-dark_gray">Wedding Venues</span>
                 </div>
                 <div className="flex flex-col">
-                    <span>1000</span>
+                    <span className="text-secondary">1000</span>
                     <span className="text-dark_gray">Monthly Followers</span>
                 </div>
             </div>
             {/* section4 */}
             <div className="flex flex-col items-center justify-center px-8 py-8 md:flex-row-reverse lg:px-40 md:gap-x-5 lg:py-0">
                 <div className="md:w-1/2 lg:h-[627px] md:h-[500px] sm:h-[400px] flex flex-col justify-center lg:px-5">
-                    <h3 className="mt-6 mb-4 text-xl font-bold lg:text-3xl lg:mt-0">Whow We Are</h3>
-                    <p className="mb-4 lg:text-2xl">
+                    <h3 className="mt-6 mb-4 text-xl font-bold lg:text-3xl lg:mt-0 text-secondary">Whow We Are</h3>
+                <p className="mb-4 md:text-xl">
                         Wedmarks is a passionate team of experts in wedding event management. With meticulous planning and
                         flawless execution, we curate exceptional weddings that reflect your unique style. Trust us to
                         transform your vision into reality, delivering a personalized and extraordinary wedding day that
@@ -78,8 +78,8 @@ const About = () => {
             {/* section4 */}
             <div className="flex flex-col items-center justify-center px-8 py-8 md:flex-row lg:px-40 md:gap-x-5 lg:py-0">
                 <div className="md:w-1/2 lg:h-[627px] md:h-[500px] sm:h-[400px] flex flex-col justify-center lg:px-5">
-                    <h3 className="mb-4 text-xl font-bold lg:text-3xl">What We Offer</h3>
-                    <p className="mb-4 lg:text-2xl">
+                    <h3 className="mb-4 text-xl font-bold lg:text-3xl text-secondary">What We Offer</h3>
+                <p className="mb-4 md:text-xl">
                         At Wedmarks, we provide a full range of wedding services, from concept design and planning to venue
                         selection, vendor coordination, and flawless execution. With personalized solutions tailored to your
                         style, we create a seamless and unforgettable wedding experience, exceeding your expectations and

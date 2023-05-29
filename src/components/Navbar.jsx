@@ -59,9 +59,15 @@ const Nav = () => {
             } lg:bg-[#ffffff14] lg:backdrop-blur-lg z-50 bg-light`}
         >
             <div className="fixed z-20 cursor-pointer md:hidden right-5 top-6" onClick={() => setopen(!open)}>
-                {open ? <CloseIcon /> : <MenuIcon style={{ fontSize: "30px" }} />}
+                {open ? (
+                    <CloseIcon style={{ fontSize: "30px", color: "#d19324" }} />
+                ) : (
+                    <MenuIcon style={{ fontSize: "30px", color: "#d19324" }} />
+                )}
             </div>
-            <img src={logo} alt="logo" className="mt-4 w-14 lg:w-16 ml-7 lg:mt-0" />
+            <Link to="/">
+                <img src={logo} alt="logo" className="mt-4 w-14 lg:w-16 ml-7 lg:mt-0" />
+            </Link>
             <ul
                 className={` backdrop-blur-md lg:backdrop-blur-0  md:pl-10 pr-28 md:static fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${
                     !open ? "right-[-100%] " : "right-0"
@@ -70,10 +76,10 @@ const Nav = () => {
                 {menus.map((menu, index) => (
                     <li
                         key={index}
-                        className="my-6 ml-5 duration-300 border-b-2 border-transparent md:inline-block md:ml-10 md:my-0 hover:border-line_shade-800"
+                        className="my-6 ml-5 duration-300 border-b-2 border-transparent md:inline-block md:ml-10 md:my-0 hover:border-secondaryDark"
                     >
                         <Link to={`${menu?.path}`}>
-                            <a className="inline-block py-3 text-sm font-normal cursor-pointer font-Barlow md:py-5">
+                            <a className="inline-block py-3 text-sm font-medium cursor-pointer font-Barlow md:py-5 text-secondary">
                                 {menu.name}
                             </a>
                         </Link>

@@ -17,11 +17,15 @@ export default {
             },
             colors: {
                 dark: "#000000",
+                secondary: "#d19324",
+                secondaryDark: "#a7761d",
                 light: "#111111",
                 text_light: "#fffafa",
                 accent: "#9dccc9",
                 line: "#e1eaeb",
                 dark_gray: "#939393",
+                text_primary: "#d19324",
+                light_white: "#ffffffae",
                 line_shade: {
                     100: "#f9fbfb",
                     200: "#f3f7f7",

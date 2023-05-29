@@ -23,14 +23,14 @@ const Contact = () => {
                         </Link>
                     </div> */}
 
-                    <div className="flex justify-center w-full px-16 lg:px-0">
+                    <div className="flex justify-center w-full px-16 lg:px-0 md:mt-7">
                         <div className=" w-[455px]">
-                            <h3>Let&apos;s Talk about Events!</h3>
-                            <div className="pt-14">
+                            <h3 className="text-secondary">Let&apos;s Talk about Events!</h3>
+                            <div className="pt-10">
                                 {/*  */}
                                 <div className="flex items-center gap-2 pb-2">
                                     <ApartmentIcon style={{ color: "#848F8B" }} />
-                                    <h5 className="text-text_link_gray">WebMark</h5>
+                                    <h5 className="text-secondary lg:text-lg">WebMark</h5>
                                 </div>
                                 <div>
                                     <h4>Kunnumkai chittarikkal Kasaragod dist</h4>
@@ -42,7 +42,7 @@ const Contact = () => {
                             <div className="pt-10">
                                 <div className="flex items-center gap-2 pb-2">
                                     <CallIcon style={{ color: "#848F8B" }} />
-                                    <h5 className="text-text_link_gray">For trade enquiries</h5>
+                                    <h5 className="text-secondary lg:text-lg">For trade enquiries</h5>
                                 </div>
                                 <div>
                                     <a href="tel:7907456800" target="_blank">
@@ -55,7 +55,7 @@ const Contact = () => {
                             <div className="pt-10">
                                 <div className="flex items-center gap-2 pb-2">
                                     <EmailIcon style={{ color: "#848F8B" }} />
-                                    <h5 className="text-text_link_gray">Email</h5>
+                                    <h5 className="lg:text-lg text-secondary">Email</h5>
                                 </div>
                                 <div>
                                     <a href="mailto:philip@wedmarkevents.com">
