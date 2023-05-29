@@ -3,6 +3,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import logo from "../assets/WedmarkLogo.png";
+import { WhatsApp } from "@mui/icons-material";
 
 const Footer = () => {
     const handleOnClick = () => {
@@ -14,9 +15,16 @@ const Footer = () => {
                 <div className="flex flex-col items-center gap-y-3">
                     <img src={logo} alt="logo" className="w-20 " />
                     <h5 className="mt-6 text-center text-dark_gray">Social Media</h5>
-                    <div className="flex justify-center lg:mt-20">
-                        <FacebookIcon className="text-white cursor-pointer" />
-                        <InstagramIcon className="text-white cursor-pointer" />
+                    <div className="flex justify-center gap-x-3 lg:mt-20">
+                        <a href="https://www.facebook.com/wedmarkweddingsandevents">
+                            <FacebookIcon style={{ color: "white" }} className="cursor-pointer" />
+                        </a>
+                        <a href="">
+                            <InstagramIcon style={{ color: "white" }} className="cursor-pointer" />
+                        </a>
+                        <a href="https://wa.me/+919747834369" target="_blank" rel="noreferrer">
+                            <WhatsApp />
+                        </a>
                     </div>
                 </div>
                 <div>
@@ -51,7 +59,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="flex justify-center pb-3">
+            <p className="flex justify-center pb-3 text-xs">
                 &copy; 2023 Wedmarks - Wedding Event Management. All rights reserved.
             </p>
         </footer>
